@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+div#page1{
+    width: 100%;
+    height: 910;
+    background-image: url(../images/index-bgi1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#logo{
+    height: 810px;
+}
+div#logo > h1,div#logo > p{
+    font-style: italic;
+    line-height: 1.2em;
+    color: white;
+    position: relative;
+}
+div#logo > h1{
+    font-size:70px;
+    font-weight: bold;
+    left: 50%;
+    top: 30%;
+}
+div#logo > p{
+    font-size: 16px;
+    left: 53%;
+    top: 32%;
+}
+div#showMore{
+    height: 50px;
+    background-color: darkgray;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+div#showMore > p{
+    font-family: "仿宋";
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+main{
+    background-color: #fff;
+    padding-top: 50px;
+}
+div#page2{
+    width: 100%;
+}
+article{
+    height: 300px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+article:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+div.img{
+    width: 40%;
+    overflow: hidden;
+}
+div.img img{
+    width: 100%;
+}
+div.img + div{
+    width: 40%;
+    padding-top: 5%; 
+    text-align: center;
+}
+div.img + div > h2{
+    margin-bottom: 10px;
+}
+div#page3{
+    height: 250px;
+    padding-top: 5%;
+    text-align: center;
+    background-color: burlywood;
+}
+div#page3,footer{
+    display: flex;
+    flex-direction: column;
+}
+div#page3 > h2{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+div#page3 > p{
+    font-size: 26px;
+}
+div#page3 a{
+    font-weight: bold;
+    color: black;
+}
+div#page3 a:visited{
+    color: gray;
+}
+footer{
+    height: 100px;
+    padding-top: 2%;
+    padding-right:2%; 
+    text-align: right;
+    background-color: darkgray;
+}
+footer > h3{
+    font-family: "仿宋";
+}
+footer > div > h6{
+    display: inline;
+}

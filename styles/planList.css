@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 80%;
+    margin: 30px auto;
+    padding: 5px;
+    background-image: url(../images/calendar.jpg);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+}
+main,div#yearAndMonth,div#week > div,.calendarDay{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #cc2;
+}
+div#yearAndMonth{
+    width: 100%;
+    height: 50px;
+    background-color: coral;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+div#yearAndMonth > i{
+    font-size: 40px;
+}
+div#yearAndMonth > i:hover{
+    cursor: pointer;
+}
+div#yearAndMonth > i:nth-of-type(1){
+    margin-left: 5px;
+}
+div#yearAndMonth > i:nth-last-of-type(1){
+    margin-right: 5px;
+}
+div#yearAndMonth > div{
+    flex-grow: 1;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+div#week{
+    width: 100%;
+    height: 50px;
+    font-size: 26px;
+}
+div#week,div#calendar{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+div#week > div{
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+div#calendar{
+    width: 100%;
+    height: 500px;
+    font-size: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+div#calendar > div.date{
+    width:14%;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.thisDay{
+    background-color: rosybrown;
+}
+.newPlan{
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+div.planMassage{
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "楷体";
+    text-align: center;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 1000;
+    display: none;
+}

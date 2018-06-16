@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div#main{
+    width: 80%;
+    margin: 20px auto;
+    background-image: url(../images/wall.jpg);
+    background-size: contain;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.photo{
+    height: 180px;
+    margin: 5px 0 0 5px;
+    padding: 5px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #cc2;
+    flex-shrink: 1;
+    position: relative;
+}
+div.photo:hover{
+    cursor: pointer;
+}
+div.photo > img{
+    height: 100%;
+}
+div#showMore{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: -10px;
+    padding-top: 10px;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+a,a:visited{
+    text-decoration: none;
+    color: darkgray;
+}
+a:hover{
+    cursor: pointer;
+}

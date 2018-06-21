@@ -6,12 +6,77 @@ body{
     overflow-x: hidden;
     font-family: 'Courier New', Courier, monospace;
 }
+@media screen and (min-width: 1120px){
+    div#page1{
+        height: 910px;
+    }
+    div#logo{
+        height: 860px;
+    }
+    div#logo > h1{
+        font-size:70px;
+    }
+    div#logo > p{
+        font-size: 16px;
+    }
+    article{
+        height: 300px;
+    }        
+    div.img + div{
+        padding-top: 5%; 
+    }
+}
+@media screen and (max-width: 1120px) and (min-width: 820px){
+    div#page1{
+        height: 500px;
+    }
+    div#logo{
+        height: 450px;
+    }
+    div#logo > h1{
+        font-size:50px;
+    }
+    div#logo > p{
+        font-size: 16px;
+    }
+    article{
+        height: 230px;
+    }
+    div.img + div{
+        padding-top: 0%; 
+    }
+}
+@media screen and (max-width: 819px){
+    div#page1{
+        height: 350px;
+    }
+    div#logo{
+        height: 350px;
+    }
+    div#logo > h1{
+        font-size:40px;
+    }
+    div#logo > p{
+        display: none;
+    }
+    div#showMore{
+        display: none;
+    }
+    article{
+        height: 180px;
+    }
+    div.img + div{
+        padding-top: 10%;
+    }
+    div.img + div > h2{
+        font-size: 40px; 
+    }
+    div.img + div > p{
+        display: none;
+    }
+}
 div#page1{
     width: 100%;
-    height: 910;
-}
-div#logo{
-    height: 810px;
 }
 div#logo > img{
     width: 100%;
@@ -25,13 +90,11 @@ div#logo > h1,div#logo > p{
     position: relative;
 }
 div#logo > h1{
-    font-size:70px;
     font-weight: bold;
     left: 50%;
     top: 30%;
 }
 div#logo > p{
-    font-size: 16px;
     left: 53%;
     top: 32%;
 }
@@ -63,7 +126,6 @@ div#page2{
     width: 100%;
 }
 article{
-    height: 300px;
     margin-bottom: 40px;
     display: flex;
     flex-wrap: nowrap;
@@ -81,23 +143,23 @@ div.img img{
 }
 div.img + div{
     width: 40%;
-    padding-top: 5%; 
     text-align: center;
 }
 div.img + div > h2{
     margin-bottom: 10px;
 }
-div#page3{
+/* div#page3{
     height: 250px;
     padding-top: 5%;
     text-align: center;
     background-color: burlywood;
-}
-div#page3,footer{
+} */
+/* div#page3, */
+footer{
     display: flex;
     flex-direction: column;
 }
-div#page3 > h2{
+/* div#page3 > h2{
     font-size: 50px;
     margin-bottom: 40px;
 }
@@ -110,7 +172,7 @@ div#page3 a{
 }
 div#page3 a:visited{
     color: gray;
-}
+} */
 footer{
     height: 100px;
     padding-top: 2%;

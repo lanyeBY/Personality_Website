@@ -58,3 +58,13 @@ ul#first ul > li:nth-last-of-type(1){
 ul#first > li:hover > ul,ul#first ul:hover{
     display: block;
 }
+@media screen and (min-width: 679px) and (max-width: 860px){
+    ul#first{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 680px){
+    ul#first{
+        width: 70%;
+    }
+}

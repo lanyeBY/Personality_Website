@@ -70,7 +70,7 @@ window.onload = function(){
         var thisMonth = today.getMonth() + 1;
         var thisDate = today.getDate();
         var thisDay = today.getDay();    
-        var calenderToday = thisDate + thisDay - 2;
+        var calenderToday = thisDate + thisDay;
         if(thisYear == showYear && thisMonth == showMonth){
             calendarday[calenderToday].classList.add("thisDay");
         }else{

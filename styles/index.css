@@ -140,6 +140,8 @@ div.img{
 }
 div.img img{
     width: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 div.img + div{
     width: 40%;

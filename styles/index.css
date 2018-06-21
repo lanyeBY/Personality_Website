@@ -9,12 +9,14 @@ body{
 div#page1{
     width: 100%;
     height: 910;
-    background-image: url(../images/index-bgi1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 div#logo{
     height: 810px;
+}
+div#logo > img{
+    width: 100%;
+    position: fixed;
+    z-index: -1000;
 }
 div#logo > h1,div#logo > p{
     font-style: italic;

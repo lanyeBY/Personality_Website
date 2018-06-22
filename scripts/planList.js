@@ -25,12 +25,11 @@ window.onload = function(){
         });
     }
     
-    //获取到容器的项数组
-
     //展示月历
     function showCalendar(year,month,calendarday){
         for(i = 0;i < calendarday.length;i++){
             calendarday[i].innerHTML = "";
+            calendarday[i].classList.remove("calendarDay");
         }
         var firstDay = new Date(year , month - 1 , "1");
         var day = firstDay.getDay();
@@ -65,18 +64,20 @@ window.onload = function(){
         }
     }
 
+    //高亮今天的日期
     function showToday(showYear,showMonth,calendarday){
+        var calendarDay = getByClass(document,"calendarDay");
         var today = new Date();
         var thisYear = today.getFullYear();
         var thisMonth = today.getMonth() + 1;
-        var thisDate = today.getDate();
-        var thisDay = today.getDay();    
-        var calenderToday = thisDate + thisDay;
+        var thisDate = today.getDate() - 1;
+        var firstDay = new Date(thisYear,thisMonth - 1,"1");
+        var thisDay = firstDay.getDay() + thisDate;
         if(thisYear == showYear && thisMonth == showMonth){
-            calendarday[calenderToday].classList.add("thisDay");
+            calendarDay[thisDate].classList.add("thisDay");
         }else{
-            calendarday[calenderToday].classList.remove("thisDay");
-        }    
+            calendarday[thisDay].classList.remove("thisDay");
+        }
     }
 
     function changeCalendar(year,month,calendarday){
@@ -123,6 +124,7 @@ window.onload = function(){
         changeCalendar(showYear,showMonth,calendarday);
     }
 
+    //加入新计划
     function plan(planYear,planMonth,planDay,planMes,calendarday){
         var showYear = document.getElementById("year").innerHTML;
         var showMonth = document.getElementById("month").innerHTML;    

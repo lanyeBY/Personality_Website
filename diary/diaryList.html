@@ -5,10 +5,25 @@
         <title>日记列表</title>
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/diaryList.css">
+        <link rel="stylesheet" id="skinCss">
         <script src="../scripts/common.js"></script>
         <script src="../scripts/diaryList.js"></script>
     </head>
     <body>
+        <header>
+            <div id="user">
+                <div id="head"></div>
+                <div id="name">
+                    <h2>Lanye</h2>
+                    <p>己所不欲，勿施于人.</p>
+                </div>
+            </div>
+            <div id="today">
+                <div id="todayYear">2017</div>
+                <div id="todayDay">05/13</div>
+                <div id="todayWeek">Thu</div>
+            </div>
+        </header>        
         <nav>
             <ul id="first">
                 <li><a href="../index.html">首页</a></li>
@@ -30,10 +45,9 @@
                         <li><a href="../plan/planList.html">全部计划</a></li>
                     </ul>
                 </li>
-                <li><a href="#">设置</a></li>
+                <li><a href="../setting/setting.html">设置</a></li>
             </ul>
         </nav>
-        <iframe src="../header.html" id="header"></iframe>
         <main>
             <article>
                 <div class="date">
@@ -146,6 +160,14 @@
                 <div class="img"><img src="../images/backView.jpg"/></div>
             </article>                    
         </main>        
-        <iframe src="../footer.html" id="footer"></iframe>
+        <footer>
+            <h3>关于我</h3>
+            <br>
+            <div>
+                <h6>QQ:</h6>609892858<br>
+                <h6>Email:</h6>609892858@qq.com<br>
+                <h6>WeChat:</h6>lanye_5_3_6_9
+            </div>
+        </footer>   
     </body>
 </html>

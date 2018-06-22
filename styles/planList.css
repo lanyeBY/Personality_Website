@@ -100,3 +100,29 @@ div.planMassage{
     z-index: 1000;
     display: none;
 }
+div#biggerToShow{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+    font-family: "楷体";
+    display: none;
+}
+@media screen and (max-width: 900px) and (min-width: 680px){
+    div#calendar{
+        font-size: 30px;
+    }
+    div#calendar > div.date{
+        padding: 30px 20px;
+    }    
+}
+@media screen and (max-width: 679px){
+    div#yearAndMonth,div#week,div#calendar{
+        display: none;
+    }
+    div#biggerToShow{
+        text-align: center;
+        display: block;
+    }
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,10 +6,20 @@
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/myfont.css">
         <link rel="stylesheet" href="../styles/planList.css">
+        <link rel="stylesheet" id="skinCss">
         <script src="../scripts/common.js"></script>
         <script src="../scripts/planList.js"></script>
     </head>
     <body>
+        <header>
+            <div id="user">
+                <div id="head"></div>
+                <div id="name">
+                    <h2>Lanye</h2>
+                    <p>己所不欲，勿施于人.</p>
+                </div>
+            </div>
+        </header>              
         <nav>
             <ul id="first">
                 <li><a href="../index.html">首页</a></li>
@@ -31,10 +41,9 @@
                         <li><a href="planList.html">全部计划</a></li>
                     </ul>
                 </li>
-                <li><a href="#">设置</a></li>
+                <li><a href="../setting/setting.html">设置</a></li>
             </ul>
         </nav>
-        <iframe src="../header.html" id="header"></iframe>
         <main>
             <div id="yearAndMonth">
                 <i class="iconfont" id="lastMonth">&#xe697;</i>
@@ -44,6 +53,14 @@
             <div id="week"></div>
             <div id="calendar"></div>
         </main>
-        <iframe src="../footer.html" id="footer"></iframe>
+        <footer>
+            <h3>关于我</h3>
+            <br>
+            <div>
+                <h6>QQ:</h6>609892858<br>
+                <h6>Email:</h6>609892858@qq.com<br>
+                <h6>WeChat:</h6>lanye_5_3_6_9
+            </div>
+        </footer>   
     </body>
 </html>

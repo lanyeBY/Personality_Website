@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>设置</title>
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/setting.css">
+        <link rel="stylesheet" id="skinCss">
+        <script src="../scripts/common.js"></script>
+        <script src="../scripts/setting.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="user">
+                <div id="head"></div>
+                <div id="name">
+                    <h2>Lanye</h2>
+                    <p>己所不欲，勿施于人.</p>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul id="first">
+                <li><a href="../index.html">首页</a></li>
+                <li>日记
+                    <ul>
+                        <li><a href="#">写日记</a></li>
+                        <li><a href="../diary/diaryList.html">日记列表</a></li>
+                    </ul>
+                </li>
+                <li>相册
+                    <ul>
+                        <li><a href="#">上传照片</a></li>
+                        <li><a href="../photo/photoWall.html">照片墙</a></li>
+                    </ul>
+                </li>
+                <li>计划
+                    <ul>
+                        <li><a href="#">新计划</a></li>
+                        <li><a href="../plan/planList.html">全部计划</a></li>
+                    </ul>
+                </li>
+                <li><a href="setting.html">设置</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>信息修改</h2>
+                <form id="information">
+                    <label for="motto">个性签名：</label>
+                    <textarea name="motto" maxlength="140"></textarea><br>
+                    <input type="button" value="保存" id="informationChange">
+                </form>
+            </section>
+            <section>
+                <h2>网页换肤</h2>
+                <ul id="skin">
+                    <li><img src="../images/white.png" onclick="changeSkin(0);"></li>
+                    <li><img src="../images/pink.png" onclick="changeSkin(1);"></li>
+                    <li><img src="../images/blue.png" onclick="changeSkin(2);"></li>
+                    <li><img src="../images/green.png" onclick="changeSkin(3);"></li>
+                    <li><img src="../images/purple.png" onclick="changeSkin(4);"></li>
+                    <li><img src="../images/black.png" onclick="changeSkin(5);"></li>
+                </ul>
+                <input type="button" value="保存" id="skinChange">
+            </section>
+        </main>
+        <footer>
+            <h3>关于我</h3>
+            <br>
+            <div>
+                <h6>QQ:</h6>609892858<br>
+                <h6>Email:</h6>609892858@qq.com<br>
+                <h6>WeChat:</h6>lanye_5_3_6_9
+            </div>
+        </footer>   
+    </body>
+</html>

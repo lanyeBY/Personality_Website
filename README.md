@@ -42,5 +42,5 @@
 - 设置motto
 - 设置网页背景色（换肤）
 
-使用**localstorage**实现存储设置
+使用 `localstorage` 实现存储设置
 

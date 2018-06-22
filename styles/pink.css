@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(208, 172, 173);
+    color: rgb(0,87,85);
+}
+header{
+    background-image: url(../images/header-bgi-pink.jpg);
+}
+footer{
+    background-color: rgb(190, 153, 155);
+}
+div.showMore{
+    background-color: rgba(190, 153, 155, 0.7);
+}
+div#main{
+    background-image: url(../images/wall-pink.jpg);
+}

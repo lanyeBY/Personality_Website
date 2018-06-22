@@ -2,19 +2,48 @@
     margin: 0;
     padding: 0;
 }
-iframe{
-    border: none;
-    overflow-x: hidden;
-}
-iframe#header{
+header{
     width: 100%;
-    height: 230px;
+    height: 180px;
+    margin-top: 50px;
+    background-image: url(../images/header-bgi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-iframe#footer{
-    width: 100%;
-    height: 120px;
+div#user{
+    width: 350px;
     position: relative;
-    bottom: 0;
+    top: 8%;
+    left: 10%;
+}
+div#head{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+    background-image: url(../images/head.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+div#name{
+    height: 150px;
+    margin-left: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+div#name > h2{
+    color: burlywood;
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+div#name > p{
+    height: 60px;
+    font-size: 16px;
+    font-family: "楷体";
 }
 nav{
     width: 100%;
@@ -58,6 +87,7 @@ ul#first ul > li:nth-last-of-type(1){
 ul#first > li:hover > ul,ul#first ul:hover{
     display: block;
 }
+
 @media screen and (min-width: 679px) and (max-width: 860px){
     ul#first{
         width: 60%;
@@ -67,4 +97,22 @@ ul#first > li:hover > ul,ul#first ul:hover{
     ul#first{
         width: 70%;
     }
+}
+footer{
+    width: 100%;
+    height: 120px;
+    padding-top: 1%;
+    padding-right:2%; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    background-color: rgb(200,200,200);
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+}
+footer > h3{
+    font-family: "仿宋";
+}
+footer > div > h6{
+    display: inline;
 }

@@ -1,0 +1,13 @@
+body,footer{
+    background-color: rgba(0,0,0,0.9);
+    color: gray;
+}
+header{
+    background-image: url(../images/header-bgi-black.jpg);
+}
+div.showMore{
+    background-color: rgba(100,100,100,0.7);
+}
+div#main{
+    background-image: url(../images/wall-black.jpg);
+}

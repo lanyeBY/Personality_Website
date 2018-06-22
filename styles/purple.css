@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(170, 135, 170);
+    color: black;
+}
+header{
+    background-image: url(../images/header-bgi-purple.jpg);
+}
+footer{
+    background-color: rgb(116, 83, 116);
+}
+div.showMore{
+    background-color: rgba(116, 83, 116, 0.7);
+}
+div#main{
+    background-image: url(../images/wall-purple.jpg);
+}

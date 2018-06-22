@@ -6,8 +6,6 @@ main{
     width: 80%;
     margin: 30px auto;
     padding: 5px;
-    background-image: url(../images/calendar.jpg);
-    background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;

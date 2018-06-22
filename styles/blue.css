@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(58, 83, 129);
+    color: black;
+}
+header{
+    background-image: url(../images/header-bgi-blue.jpg);
+}
+footer{
+    background-color: rgb(41, 55, 82);
+}
+div.showMore{
+    background-color: rgba(41, 55, 82, 0.7);
+}
+div#main{
+    background-image: url(../images/wall-blue.jpg);
+}

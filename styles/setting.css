@@ -1,0 +1,71 @@
+main{
+    width: 80%;
+    height: 271px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    width: 50%;
+    height: 100%;
+    margin-right: 10px;
+    padding:20px;
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+section > h2{
+    margin-bottom: 20px;
+}
+#information > textarea{
+    width: 90%;
+    height: 60%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    background-color: inherit;
+    border-width: 2px;
+    border-color: rgb(100, 100, 100);
+    border-radius: 5px;
+}
+input[type=button]{
+    width: 80px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+ul#skin{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul#skin > li{
+    width: 30%;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+ul#skin > li > img{
+    margin-right: 5px;
+    cursor: pointer;
+}
+section:nth-of-type(2) > input {
+    bottom: -55px;
+}
+@media screen and (max-width: 950px){
+    main{
+        height: 560px;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+    section{
+        width: 100%;
+        height: 50%;
+    }    
+}

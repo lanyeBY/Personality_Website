@@ -13,3 +13,11 @@ function getByClass(node,myclass){
         return results;
     }
 }
+function readStorage(){
+    if(window.localStorage.getItem("skinCss")){
+        document.getElementById("skinCss").href = window.localStorage.getItem("skinCss");
+    }
+    if(window.localStorage.getItem("motto")){
+        document.getElementById("name").getElementsByTagName("p")[0].innerHTML = window.localStorage.getItem("motto");
+    }
+}

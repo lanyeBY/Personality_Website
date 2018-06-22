@@ -7,6 +7,7 @@ function newElement(parentNode,elementName,obj){
     parentNode.appendChild(newEle);
 }
 window.onload = function(){
+    readStorage();
     var week = document.getElementById("week");
     var calendar = document.getElementById("calendar");
     //创建月历中星期的容器

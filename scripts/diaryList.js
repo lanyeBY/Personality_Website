@@ -12,3 +12,24 @@ function showMore(number){
         showMore[number].innerHTML = "Show More";
     }
 }
+window.onload = function(){
+    readStorage();
+    var todayDate = new Date();
+    var todayYear = todayDate.getFullYear();
+    var todayMonth = todayDate.getMonth() + 1;
+    var todayDay = todayDate.getDate();
+    var todayWeek = todayDate.getDay();
+    todayMonth = (todayMonth < 10)?('0' + todayMonth):todayMonth;
+    switch(todayWeek){
+        case 0 : todayWeek = "Sun";break;
+        case 1 : todayWeek = "Mon";break;
+        case 2 : todayWeek = "Tue";break;
+        case 3 : todayWeek = "Wed";break;
+        case 4 : todayWeek = "Thu";break;
+        case 5 : todayWeek = "Fri";break;
+        case 6 : todayWeek = "Sat";break;
+    }
+    document.getElementById("todayYear").innerHTML = todayYear;
+    document.getElementById("todayDay").innerHTML = todayMonth + "/" + todayDay;
+    document.getElementById("todayWeek").innerHTML = todayWeek;
+};

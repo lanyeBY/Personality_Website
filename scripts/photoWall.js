@@ -5,6 +5,7 @@ function createNewPhoto(imgSrc){
     document.getElementById("main").appendChild(newphoto);
 }
 window.onload = function(){
+    readStorage();
     var imgSrcArray = [];
     var showMore = document.getElementById("showMore").getElementsByTagName("a")[0];
     for(var i = 0;i < 30;i++){
